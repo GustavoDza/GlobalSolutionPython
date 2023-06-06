@@ -1,0 +1,15 @@
+Na imagem, conseguimos contornar o lote escolhido para plantacao usando o método findContours.
+Dentro de todos os contornos encontrados vamos isolar o contorno do lote escolhido, faremos isso pelo tamanho da área e desenharemos o contorno somente para o contorno que se encaixa dentro dos parâmetro da área. 
+Pela área, podemos calcular quantos hectares esse lote tem, 1 hectare é equivalente á 10.000m2, portanto o lote possui aproximadamente 5 hectares.
+Suponhamos que o agricultor vai plantar milho e feijão.
+Podemos agora fazer o cálculo de quantas sementes por hectare o agricultor deve plantar para melhores resultados. 
+Por exemplo, o milho, utilzaremos uma taxa de semeadura de 3 sementes por metro linear e espaçamento de 0,45m, seguindo a fórmula de Número de sementes por hectare = (10.000m2 / espaçamento) x taxa de semeadura x 1,1.
+A fórmula acima multiplica por 1,1 pela eventual perda de sementes, então é adicionado 10% a mais de sementes
+E a fórmula de quantos quilos o agricultor deve comprar de feijão por hectare é: ((10.000m2 x peso em gramas de 100 sementes x taxa de semeadura) / (espaçamento x taxa de germinação da semente)) x 1,1
+
+Com todas as nossas fórmulas já preparadas, damos a opção para o agricultor de dividir os hectares para as sementes de milho e feijão. 
+Ele irá digitar quantos hectares usará para milho e feijão, faremos uma simples conta para exibir a quantidade de sementes que precisará comprar para a quantidade de hectares desejada.
+
+Observação: todas as fórmulas usadas foram retiradas de pesquisas.
+fontes: https://www.myfarm.com.br/semeadura-do-feijao/#:~:text=Usualmente%20na%20semeadura%20do%20feij%C3%A3o,300%20mil%20plantas%20por%20hectare. - fórmula feijão
+https://blog.aegro.com.br/calculo-de-semeadura-de-milho/ - fórmula milho
